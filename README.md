@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+# SnapGram
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido/a a SnapGram, la aplicación social para compartir momentos inolvidables a través de imágenes y videos.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+SnapGram es una plataforma de medios sociales que permite a los usuarios compartir y descubrir momentos especiales en sus vidas. Con una interfaz fácil de usar y funciones intuitivas, SnapGram ofrece una experiencia única de intercambio visual.
 
-## Expanding the ESLint configuration
+## Características Principales
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Historias Efímeras**: Comparte momentos que desaparecen después de 24 horas, agregando un toque de efemeridad a tus publicaciones.
+- **Explora y Descubre**: Descubre nuevas cuentas, sigue a tus amigos y mantente al tanto de las últimas tendencias visuales.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clona el repositorio: `git clone https://github.com/tuusuario/snapgram.git`
+2. Instala las dependencias: `npm install`
+3. Inicia la aplicación: `npm start`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Requisitos del Sistema
+
+- Node.js
+- NPM
+
+## Contribuciones
+
+¡Contribuciones son bienvenidas! Si tienes sugerencias, mejoras o encuentras problemas, por favor, abre un issue o envía un pull request.
+
+---
+
+¡Esperamos que disfrutes usando SnapGram tanto como nosotros disfrutamos desarrollándolo! Si tienes alguna pregunta, contáctanos en [soporte@snapgram.com](mailto:soporte@snapgram.com).
