@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -95,8 +94,12 @@ const SigninForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="shad-button_primary">
-            {isUserLoading ? (
+          <Button
+            type="submit"
+            className="shad-button_primary"
+            disabled={isUserLoading || isSignIn}
+          >
+            {isUserLoading || isSignIn ? (
               <div className="flex-center gap-2">
                 <Loader /> Loading...
               </div>
