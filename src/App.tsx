@@ -20,7 +20,7 @@ import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <main className="flex h-screen">
+    <main className="flex h-screen overflow-hidden">
       <Routes>
         {/*public routes*/}
         <Route element={<AuthLayout />}>
