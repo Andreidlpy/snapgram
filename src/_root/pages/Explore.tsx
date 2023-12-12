@@ -9,10 +9,11 @@ import { Loader } from "@/components/shared/Loader";
 import { Input } from "@/components/ui/input";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { Models } from "appwrite";
 
 export type SearchResultProps = {
   isSearchFetching: boolean;
-  searchedPosts: any;
+  searchedPosts: Models.DocumentList<Models.Document> | undefined;
 };
 
 const SearchResults = ({
@@ -37,7 +38,6 @@ export const Explore = () => {
   const debouncedValue = useDebounce(searchValue, 500);
   const { data: searchedPosts, isFetching: isSearchFetching } =
     useSearchPosts(debouncedValue);
-
   useEffect(() => {
     if (inView && !searchValue) fetchNextPage();
   }, [inView, searchValue]);
