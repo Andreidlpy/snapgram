@@ -16,7 +16,7 @@ export const PostValidation = z.object({
     caption: z.string().min(5).max(2000),
     file: z.custom<File[]>(),
     location: z.string().min(2).max(100),
-    tags: z.string(),
+    tags: z.string().refine((value) => /^[a-zA-Z0-9]+(?:, |,)?[a-zA-Z0-9]+$/.test(value), 'Tags should only contain letters and numbers, separated by a comma'),
 });
 export const ProfileValidation = z.object({
     file: z.custom<File[]>(),
